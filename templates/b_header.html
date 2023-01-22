@@ -1,0 +1,31 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Менеджер задач</title>
+
+    <link rel="stylesheet" href="{{oR.sStaticPath}}/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> -->
+    
+    <link href="{{oR.sStaticPath}}/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{oR.sStaticPath}}/styles.css">
+
+    <link rel="shortcut icon" href="{{oR.sStaticPath}}/favicon.png" type="image/png">
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+
+    <script src="{{oR.sStaticPath}}/jquery-3.6.2.js"></script>    
+    <script src="{{oR.sStaticPath}}/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        {{ macros.menu(oR.lTopMenu, "top") }}
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

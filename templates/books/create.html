@@ -1,0 +1,15 @@
+{% import "macros.html" as macros %}
+{% extends "b_header.html" %}
+
+{% block content %}
+<form action="">
+    <div class="page page-books page-books-edit">
+    {% for oF in oR.oForm %}
+    <div class="mb-3">
+        <label class="form-label">{{oF.label}}</label>
+        {{oF}}
+    </div>
+    {% endfor %}
+    </div>
+</form>
+{% endblock %}
