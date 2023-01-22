@@ -9,8 +9,6 @@ from .extensions import db, migrate
 
 from config import Config
 
-DATABASE = './wapp_books_manager_flask.db'
-
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
